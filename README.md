@@ -238,6 +238,16 @@ npm run dev
 
 Open the local URL printed by Vite (normally `http://localhost:5173`). Keep both development servers running. The Vite proxy in `Frontend/vite.config.js` forwards `/api` requests to port 8000.
 
+### Start both services with one command on Windows
+
+From the repository root in PowerShell, run:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\run.ps1
+```
+
+The launcher opens separate backend and frontend windows, installs missing dependencies, and prints the local frontend URL. Keep both windows open while using the app.
+
 The bootstrap Admin is optional. If bootstrap credentials are configured, an account is created on backend startup only if that username is not already present. Admins can create other accounts from **Overall → Manage accounts**. Account passwords must be at least 12 characters.
 
 ## Updating the project safely
